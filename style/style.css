@@ -354,3 +354,13 @@ button{
 
 /* STORE */
 
+.store_title{
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 58px;
+    color: #000000;
+}

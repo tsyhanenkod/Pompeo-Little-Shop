@@ -32,6 +32,11 @@ ul{
     list-style: none;
 }
 
+button{
+    margin: 0;
+    padding: 0;
+}
+
 /* PAGE */
 
 .container{
@@ -179,6 +184,19 @@ ul{
     background-color: #AC1313;
     color: #fff;
     padding: 20px 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.shop_collection_btn:hover{
+    background-color: #D77474;
+
 }
 
 .collection_img{

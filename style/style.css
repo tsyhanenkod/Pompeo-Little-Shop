@@ -58,7 +58,7 @@ ul{
     font-weight: 400;
     font-size: 33px;
     line-height: 40px;
-    margin-top: 13px;
+    margin-top: 20px;
 }
 
 .nav{
@@ -108,3 +108,84 @@ ul{
 .cart_link{
     margin-right: 6px;
 }
+
+/* COLLECTION */
+
+.collection{
+    background-image: url("../images/Collection_BG.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 150px;
+}
+
+.collection_inner{
+    padding-top: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: -10px;
+}
+
+.collection_text{
+    position: relative;
+}
+
+.up_title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D77474;
+    margin-bottom: 12px;
+}
+
+.collection_title{
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.collection_title span{
+    position: absolute;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 68px;
+    color: #AC1313;
+    top: -25px;
+}
+
+.under_title{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 15px;
+    color: #6C6C6C;
+    margin-bottom: 50px;
+}
+
+.shop_collection_btn{
+    background-color: #AC1313;
+    color: #fff;
+    padding: 20px 35px;
+}
+
+.collection_img{
+    float: right;
+    position: absolute;
+    width: 1077px;
+    height: 611px;
+    margin-left: 30%;
+}
+

@@ -40,15 +40,41 @@ button{
 /* PAGE */
 
 .container{
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 1200px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #fff;
 }
 
 /* HEADER */
 
 .header{
-    vertical-align: middle;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0px 20px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.11);
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 0 rgb(0 0 0 / 5%);
 }
 
 .header_inner{
@@ -85,14 +111,13 @@ button{
 }
 
 .nav_item{
-    color: #6C6C6C;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 22px;
     letter-spacing: 2px;
-    transition: all .3s;
+    text-transform: uppercase;
 }
 
 .nav_item:hover{
@@ -100,11 +125,14 @@ button{
 }
 
 .cart{
+    cursor: pointer;
+    display: flex;
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
+    align-items: center;
     padding: 9px 20px;
     margin-left: 20px;
     border-left: 1px solid #EBEBEB;
@@ -117,31 +145,86 @@ button{
 /* COLLECTION */
 
 .collection{
+    padding-top: 5%;
     background-image: url("../images/Collection_BG.jpg");
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 150px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 120px;
 }
 
 .collection_inner{
-    padding-top: 300px;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
-    gap: -10px;
 }
 
 .collection_text{
-    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.collection_image{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.collection_img{
+    background-position: 50% 50%;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 500px;
+    margin-left: -196px;
+    background-image: url("../images/Collection_Image.png");
 }
 
 .up_title{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 24px;
+    text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #D77474;
@@ -152,8 +235,8 @@ button{
     position: relative;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
-    font-size: 54px;
+    font-weight: 400;
+    font-size: 48px;
     line-height: 58px;
     color: #000000;
 }
@@ -173,20 +256,20 @@ button{
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
-    margin-top: 15px;
     color: #6C6C6C;
+    margin-top: 15px;
     margin-bottom: 50px;
 }
 
-.shop_collection_btn{
+.button{
     background-color: #AC1313;
     color: #fff;
     padding: 20px 35px;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 1px;
@@ -194,24 +277,24 @@ button{
     transition: all .3s;
 }
 
-.shop_collection_btn:hover{
-    background-color: #D77474;
+.button:hover{
+    background-color: #000000;
 
-}
-
-.collection_img{
-    float: right;
-    position: absolute;
-    width: 1077px;
-    height: 611px;
-    margin-left: 30%;
 }
 
 /* PRODUCT CATIGORIES */
 
-.up_title{
-    text-align: center;
+.product_up_title{
     margin-bottom: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D77474;
 }
 
 .catigories_title{
@@ -225,9 +308,9 @@ button{
     position: relative;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
-    font-size: 54px;
-    line-height: 58px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
     color: #000000;
 }
 
@@ -239,7 +322,7 @@ button{
     font-size: 68px;
     line-height: 68px;
     color: #AC1313;
-    top: -30px
+    top: -20px
 }
 
 .product_list{
@@ -275,8 +358,8 @@ button{
 .block_title{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 400;
+    font-size: 29px;
     line-height: 36px;
     color:#000000; 
 }
@@ -289,7 +372,7 @@ button{
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     color: #6C6C6C;
 }
@@ -314,10 +397,11 @@ button{
 .vases_title{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 24px;
     line-height: 34px;
     color: #000000;
+    margin-bottom: 25px;
 }
 
 .vases_description{
@@ -329,6 +413,7 @@ button{
     color: #6C6C6C;
     max-width: 380px;
     margin-right: 120px;
+    margin-bottom: 25px;
 }
 
 .vertical_text_2{
@@ -363,4 +448,32 @@ button{
     font-size: 54px;
     line-height: 58px;
     color: #000000;
+}
+
+.vases_link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    transition: all .3s;
+}
+
+.vases_link:hover{
+    color: #AC1313;
+}
+
+/* STORE */
+
+.store_title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.store_button{
+    text-align: center;
 }

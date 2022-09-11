@@ -439,6 +439,10 @@ button{
 
 /* STORE */
 
+.store{
+    margin-bottom: 120px;
+}
+
 .store_title{
     text-align: center;
     position: relative;
@@ -492,4 +496,200 @@ button{
     text-transform: uppercase;
     color: #DBDBDB;
     margin-top: 700px;
+}
+
+/* SHOPPING */
+
+.shopping{
+    height: 470px;
+    background-image: url("../images/shopping_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.shopping_inner{
+
+}
+
+.up_shopping_title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D77474;
+    margin-bottom: 7px;
+}
+
+.shopping_title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.under_shopping_title{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6C6C6C;
+    margin-bottom: 30px;
+}
+
+.under_shopping_title span{
+    text-decoration:underline;
+    color: #AC1313;
+}
+
+/* SUB */
+
+.sub{
+    margin-bottom: 160px;
+}
+
+.sub_inner{
+    align-items: center;
+}
+
+.telegram{
+    margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.sub_title{
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.sub_title span{
+    position: absolute;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 68px;
+    color: #AC1313;
+    top: -20px
+}
+
+.sub_from{
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub_input{
+   border: 1px solid #EBEBEB;
+   margin-right: 4px;
+   padding: 0 40px;
+}
+
+.sub_button{
+    padding: 12px 30px;
+    color: #fff;
+    background-color: #000;
+}
+
+.sub_radio{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.radio_text{
+    color: #A1A1A1;
+    margin-left: 5px;
+}
+
+/* FOOTER */
+
+.footer{
+    border-top: 1px solid #DBDBDB;
+    padding-top: 110px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.footer_logo{
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 40px;
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer_text{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #6C6C6C;
+}
+
+.footer_nav{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+.footer_nav_item{
+    width: 33.33333333%;
+}
+
+.item_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.item_title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.item_desc_link{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #6C6C6C;
+    display: flex;
+    justify-content: center;
 }

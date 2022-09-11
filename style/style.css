@@ -608,6 +608,11 @@ button{
     padding: 12px 30px;
     color: #fff;
     background-color: #000;
+    transition: all .3s;
+}
+
+.sub_button:hover{
+    background-color: #AC1313;
 }
 
 .sub_radio{
@@ -693,3 +698,5 @@ button{
     display: flex;
     justify-content: center;
 }
+
+/* https://pompeo.webflow.io/ */

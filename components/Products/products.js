@@ -7,7 +7,7 @@ class Products {
             htmlCatalog += `
                 <li class="store_element">
                     <div class="element_image">
-                        <img class="store_element_img" src='../${img}' />
+                        <img class="store_element_img" src="${img}" />
                     </div>
                     <div class="store_element_list">
                         <div class="store_element_text">

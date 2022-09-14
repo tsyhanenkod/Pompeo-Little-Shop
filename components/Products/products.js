@@ -43,19 +43,24 @@ productsPage.render()
 
 
 
-//      PRODUCTS COUNTER
+//      PRODUCTS COUNTER 
 
-const btnPlus = document.querySelector('[data-action="plus"]')
-const btnMinus = document.querySelector('[data-action="minus"]')
-const productsCounter = document.querySelector('[data-counter]')
+window.addEventListener('click', function(event){
 
-btnPlus.addEventListener('click', function(){
-    console.log('plus click')
-    productsCounter.innerText = ++productsCounter.innerText;
+    let productCounter;
+
+    if (event.target.dataset.action === 'plus' || 'minus') {
+        const itemCounter = event.target.closest('.item_counter');
+        productCounter = itemCounter.querySelector('[data-counter]');
+    }   
+
+    if (event.target.dataset.action === 'plus') {
+        productCounter.innerText = ++productCounter.innerText;
+    }
+
+    if (event.target.dataset.action === 'minus') {
+        if (productCounter.innerText > 1) {
+            productCounter.innerText = --productCounter.innerText;
+        } 
+    }
 });
-
-btnMinus.addEventListener('click', function(){
-    console.log('minus click')
-    productsCounter.innerText = --productsCounter.innerText;
-});
-

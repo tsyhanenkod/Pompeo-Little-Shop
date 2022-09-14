@@ -1,3 +1,5 @@
+//  PRODUCTS CARDS
+
 class Products {
 
     render(){
@@ -38,9 +40,22 @@ class Products {
 const productsPage = new Products();
 productsPage.render()
 
+
+
+
+//      PRODUCTS COUNTER
+
 const btnPlus = document.querySelector('[data-action="plus"]')
 const btnMinus = document.querySelector('[data-action="minus"]')
+const productsCounter = document.querySelector('[data-counter]')
 
 btnPlus.addEventListener('click', function(){
-    console.log('minus click')
+    console.log('plus click')
+    productsCounter.innerText = ++productsCounter.innerText;
 });
+
+btnMinus.addEventListener('click', function(){
+    console.log('minus click')
+    productsCounter.innerText = --productsCounter.innerText;
+});
+
